@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Ms1Controller {
 
-	@Value("${message}")
+	@Value("${message:without config server}")
 	private String message;
 
 	@GetMapping
